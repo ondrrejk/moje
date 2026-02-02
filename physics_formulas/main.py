@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import scrolledtext
+from tkinter import messagebox
 import tkinter.ttk as ttk
 
 window = Tk()
@@ -13,7 +14,10 @@ window.config(background="#ffffff")
 label1 = Label(window, text="Hello world!", font=("Arial Bold", 10))
 label1.grid(column=0, row=0)
 
-bt = Button(window, text="Click me")
+def message():
+    messagebox.showinfo("Success", "Successfully clicked a button.")
+
+bt = Button(window, text="Click me", command=message)
 bt.grid(column=1, row=0)
 
 bt_orange = Button(window, text="Orange", fg="yellow", bg="orange")
