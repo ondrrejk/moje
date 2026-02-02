@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import scrolledtext
 import tkinter.ttk as ttk
 
 window = Tk()
@@ -37,5 +38,16 @@ chk_state = BooleanVar()
 chk_state.set(True)
 chk = Checkbutton(window, text="select", var=chk_state)
 chk.grid(column=1, row=3)
+
+rad1 = Radiobutton(window, text="Volkswagen", value=1)
+rad2 = Radiobutton(window, text="Ferrari", value=2)
+rad3 = Radiobutton(window, text="Lotus", value=3)
+rad1.grid(column=0, row=4)
+rad2.grid(column=1, row=4)
+rad3.grid(column=2, row=4)
+
+scr_txt = scrolledtext.ScrolledText(window, width=40, height=10)
+scr_txt.insert(INSERT, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur augue sit amet mi dignissim dapibus. Maecenas rhoncus, nisl sed mollis varius, orci arcu tempor metus, eget scelerisque leo eros a ex. Nam molestie nisl ut eros varius congue. Mauris posuere ullamcorper cursus. Quisque sit amet purus blandit, dictum eros et, lobortis nisi. Phasellus nibh massa, sagittis et odio facilisis, dictum cursus tortor. Etiam enim leo, vulputate dictum turpis sed, malesuada venenatis eros. Sed dignissim venenatis tortor sit amet malesuada. Duis posuere ac justo non iaculis. Nulla vehicula risus condimentum dolor accumsan scelerisque.")
+scr_txt.grid(column=0, row=5)
 
 window.mainloop()
