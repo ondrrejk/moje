@@ -4,7 +4,8 @@ window = Tk()
 window.geometry("420x420")
 window.title("Python app 123")
 
-icon = PhotoImage(file='physics_formulas/logo.png')
-window.iconphoto(True, icon)
+icon = PhotoImage(file='logo.jpg')
+window.iconphoto(True,icon)
+window.config(background="#ffffff")
 
 window.mainloop()
