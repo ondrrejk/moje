@@ -54,4 +54,7 @@ scr_txt = scrolledtext.ScrolledText(window, width=40, height=10)
 scr_txt.insert(INSERT, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur augue sit amet mi dignissim dapibus. Maecenas rhoncus, nisl sed mollis varius, orci arcu tempor metus, eget scelerisque leo eros a ex. Nam molestie nisl ut eros varius congue. Mauris posuere ullamcorper cursus. Quisque sit amet purus blandit, dictum eros et, lobortis nisi. Phasellus nibh massa, sagittis et odio facilisis, dictum cursus tortor. Etiam enim leo, vulputate dictum turpis sed, malesuada venenatis eros. Sed dignissim venenatis tortor sit amet malesuada. Duis posuere ac justo non iaculis. Nulla vehicula risus condimentum dolor accumsan scelerisque.")
 scr_txt.grid(column=0, row=5)
 
+spin = Spinbox(window, from_=0, to=100, width=5)
+spin.grid(column=0, row=6)
+
 window.mainloop()
